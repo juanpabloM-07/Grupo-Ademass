@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+}
+ 
+/* ===== Sección de Artículos ===== */
+ 
+.articles-section {
+  background-color: #f7f8fa;
+  padding: 55px 20px 70px;
+  text-align: center;
+}
+ 
+.articles-eyebrow {
+  color: #a8adb5;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+ 
+.articles-title {
+  color: #c3d024;
+  font-size: 34px;
+  font-weight: 800;
+  margin: 0 0 45px;
+}
+ 
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+ 
+.article-card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 320px;
+  text-align: left;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.article-image {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  display: block;
+  background-color: #dfe2e6;
+}
+ 
+.article-content {
+  padding: 22px 22px 26px;
+}
+ 
+.article-title {
+  color: #2b3a55;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 12px;
+}
+ 
+.article-excerpt {
+  color: #2b3a55;
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin: 0;
+}
+ 
+.cta-wrapper {
+  margin-top: 45px;
+}
+ 
+.btn-ver-mas {
+  display: inline-block;
+  background: transparent;
+  color: #c3d024;
+  border: 2px solid #c3d024;
+  padding: 12px 38px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+ 
+.btn-ver-mas:hover {
+  background-color: #c3d024;
+  color: #ffffff;
+}
+ 
+/* ===== Banner ilustrado ===== */
+ 
+.illustration-banner {
+  width: 100%;
+  height: 320px;
+  background-color: #d9f0ee;
+  background-image: url("banner-ilustracion.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+@media (max-width: 768px) {
+  .articles-title {
+    font-size: 26px;
+  }
+  .article-card {
+    width: 100%;
+    max-width: 400px;
+  }
+  .illustration-banner {
+    height: 220px;
+  }
+}
