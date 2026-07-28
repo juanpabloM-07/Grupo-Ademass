@@ -84,5 +84,212 @@
   </div>
 </div>
 
+
+<!-- Staff -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #334155;
+      padding-bottom: 60px;
+    }
+
+   
+
+    .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    /* Subtítulo superior */
+    .top-subtitle {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    /* Botón verde/lima */
+    .btn-top {
+      display: inline-block;
+      text-decoration: none;
+      color: #a3e635;
+      border: 2px solid #a3e635;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      margin-bottom: 40px;
+    }
+
+    .btn-top:hover {
+      background-color: #a3e635;
+      color: #ffffff;
+    }
+
+    /* Título principal Staff */
+    .staff-title {
+      font-size: 2.5rem;
+      color: #38bdf8;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+
+    /* Grid para las 5 tarjetas */
+    .staff-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    /* Ajustes para la tarjeta completa */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  padding: 24px 16px; /* Ajustamos un poco el relleno */
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Alinea los textos e imágenes a la misma altura */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Ajuste perfecto para las imágenes */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  
+  /* Mantener proporción y que no se recorte el personaje */
+  object-fit: contain; 
+  
+  /* Color de fondo suave para que todas compartan el mismo fondo */
+  background-color: #f1f5f9; 
+  padding: 10px; /* Margen interno para que el personaje no toque las orillas */
+  margin-bottom: 16px;
+}
+
+    .member-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 6px;
+    }
+
+    .member-role {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #64748b;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .member-desc {
+      font-size: 0.85rem;
+      color: #64748b;
+      line-height: 1.5;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Franja de color superior opcional -->
+  <div class="hero-banner"></div>
+
+  <main class="main-container">
+    
+    <!-- Texto descriptivo arriba -->
+    <p class="top-subtitle">CONOCE A LOS ROCKSTARS DE ADEMASS, Y CONVIÉRTETE EN UNO DE ELLOS.</p>
+
+    <!-- Enlace a otra pestaña -->
+    <a href="https://tu-sitio.com/contacto" target="_blank" rel="noopener noreferrer" class="btn-top">
+      VER MIEMBROS DE LA COMUNIDAD CON MAYOR REPUTACIÓN
+    </a>
+
+    <!-- Título de la sección -->
+    <h2 class="staff-title">Staff</h2>
+    
+    <!-- Integrantes (Backyardigans) -->
+    <div class="staff-grid">
+      
+      <!-- Pablo -->
+      <div class="card">
+        <img src="assets/img/Pablo.webp" alt="Pablo" class="avatar">
+        <h3 class="member-name">Pablo</h3>
+        <p class="member-role">CEO</p>
+        <p class="member-desc">Entusiasta y lleno de energía. Lidera las misiones e ideas creativas del equipo.</p>
+      <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+  <i data-lucide="mail"></i>
+  <span>Contáctanos aquí</span>
+</a>
+    </div>
+
+      <!-- Tyrone -->
+      <div class="card">
+        <img src="assets/img/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="Tyrone" class="avatar">
+        <h3 class="member-name">Tyrone</h3>
+        <p class="member-role">COO</p>
+        <p class="member-desc">Relajado y analítico. Aporta el equilibrio y la calma para ejecutar cada plan.</p>
+      <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+  <i data-lucide="mail"></i>
+  <span>Contáctanos aquí</span>
+</a>
+    </div>
+
+      <!-- Uniqua -->
+      <div class="card">
+        <img src="assets/img/Uniqua.webp" alt="Uniqua" class="avatar">
+        <h3 class="member-name">Uniqua</h3>
+        <p class="member-role">Project Manager</p>
+        <p class="member-desc">Intrépida y ágil. Asume retos con determinación y motiva al equipo.</p>
+      <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+  <i data-lucide="mail"></i>
+  <span>Contáctanos aquí</span>
+</a>
+    </div>
+
+      <!-- Tasha -->
+      <div class="card">
+        <img src="assets/img/Tasha.jpg" alt="Tasha" class="avatar">
+        <h3 class="member-name">Tasha</h3>
+        <p class="member-role">CQO</p>
+        <p class="member-desc">Racional y directa. Asegura que los proyectos cumplan altos estándares de calidad.</p>
+      <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+  <i data-lucide="mail"></i>
+  <span>Contáctanos aquí</span>
+</a>
+    </div>
+
+      <!-- Austin -->
+      <div class="card">
+        <img src="assets/img/Austin.webp" alt="Austin" class="avatar">
+        <h3 class="member-name">Austin</h3>
+        <p class="member-role">Backend Engineer</p>
+        <p class="member-desc">Ingenioso y reservado. Resuelve problemas complejos desde el soporte técnico.</p>
+      <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+  <i data-lucide="mail"></i>
+  <span>Contáctanos aquí</span>
+</a>
+    </div>
+
+    </div>
 </body>
 </html>
