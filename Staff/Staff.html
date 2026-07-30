@@ -6,8 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<header>
+    <header>
     <div class="nav-inner">
       <a href="#" class="logo">
         <img src="/img/logo.png" class="logoa" alt="Ademass" style="height:42px;width:auto;">
@@ -24,41 +25,82 @@
     </div>
   </header>
 
-<body>
-    <!-- ============================================= -->
-<!-- SECCIÓN: TENEMOS DISCORD                        -->
-<!-- Pega este bloque dentro del <body> de tu página -->
-<!-- ============================================= -->
+    <div class="page-content">
 
-<section class="discord-section">
-  <div class="discord-container">
+    <!-- STAFF -->
+    <main class="main-container">
 
-    <!-- Columna de texto -->
-    <div class="discord-text">
-      <p class="discord-eyebrow">NOSOTROS LO LLAMAMOS LA CAFETERÍA</p>
-      <h2 class="discord-title">Tenemos Discord <span class="wink">:)</span></h2>
-      <p class="discord-description">
-        Entra en nuestro discord. Conoce a otros desarrolladores como tú,
-        chatea de chill en los off-topic, conoce a nuestro equipo, súmate a
-        proyectos, resuelve dudas, realiza sugerencias… ¡lo que prefieras!
-        Discord es nuestra cafetería, un punto de encuentro en la red para
-        charlar y hablar tanto de aquello que estamos desarrollando como de
-        cualquier otra cosa.
-      </p>
-      <a href="https://discord.com" class="discord-btn" target="_blank" rel="noopener">
-        ÚNETE A NUESTRO DISCORD
+      <p class="top-subtitle">CONOCE A LOS ROCKSTARS DE ADEMASS, Y CONVIÉRTETE EN UNO DE ELLOS.</p>
+
+      <a href="https://tu-sitio.com/contacto" target="_blank" rel="noopener noreferrer" class="btn-top">
+        VER MIEMBROS DE LA COMUNIDAD CON MAYOR REPUTACIÓN
       </a>
-    </div>
 
-    <!-- Columna de ilustración -->
-    <div class="discord-illustration">
-      <img src="../assets/img/discord-illustration.png" alt="Ilustración de bienvenida a Discord" class="illustration-img">
-    </div>
+      <h2 class="staff-title">Staff</h2>
+
+      <div class="staff-grid">
+
+        <div class="card">
+          <img src="assets/img/Pablo.webp" alt="Pablo" class="avatar">
+          <h3 class="member-name">Pablo</h3>
+          <p class="member-role">CEO</p>
+          <p class="member-desc">Entusiasta y lleno de energía. Lidera las misiones e ideas creativas del equipo.</p>
+          <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+            <i data-lucide="mail"></i>
+            <span>Contáctanos aquí</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <img src="assets/img/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="Tyrone" class="avatar">
+          <h3 class="member-name">Tyrone</h3>
+          <p class="member-role">COO</p>
+          <p class="member-desc">Relajado y analítico. Aporta el equilibrio y la calma para ejecutar cada plan.</p>
+          <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+            <i data-lucide="mail"></i>
+            <span>Contáctanos aquí</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <img src="assets/img/Uniqua.webp" alt="Uniqua" class="avatar">
+          <h3 class="member-name">Uniqua</h3>
+          <p class="member-role">Project Manager</p>
+          <p class="member-desc">Intrépida y ágil. Asume retos con determinación y motiva al equipo.</p>
+          <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+            <i data-lucide="mail"></i>
+            <span>Contáctanos aquí</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <img src="assets/img/Tasha.jpg" alt="Tasha" class="avatar">
+          <h3 class="member-name">Tasha</h3>
+          <p class="member-role">CQO</p>
+          <p class="member-desc">Racional y directa. Asegura que los proyectos cumplan altos estándares de calidad.</p>
+          <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+            <i data-lucide="mail"></i>
+            <span>Contáctanos aquí</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <img src="assets/img/Austin.webp" alt="Austin" class="avatar">
+          <h3 class="member-name">Austin</h3>
+          <p class="member-role">Backend Engineer</p>
+          <p class="member-desc">Ingenioso y reservado. Resuelve problemas complejos desde el soporte técnico.</p>
+          <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+            <i data-lucide="mail"></i>
+            <span>Contáctanos aquí</span>
+          </a>
+        </div>
+
+      </div>
+    </main>
 
   </div>
-</section>
 
-<footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-inner">
 
       <div class="footer-col footer-brand">
@@ -120,106 +162,5 @@
       Ademass © Todos los derechos reservados. Versión: 0.8.0
     </div>
   </footer>
-
-<style>
-  .discord-section {
-    background: linear-gradient(135deg, #ffb56b 0%, #ff9a4d 40%, #ffc94d 100%);
-    padding: 90px 40px;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    overflow: hidden;
-  }
-
-  .discord-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-    flex-wrap: wrap;
-  }
-
-  .discord-text {
-    flex: 1 1 420px;
-    color: #fff;
-  }
-
-  .discord-eyebrow {
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 600;
-    color: rgba(255,255,255,0.85);
-    margin-bottom: 14px;
-    text-transform: uppercase;
-  }
-
-  .discord-title {
-    font-size: 42px;
-    font-weight: 800;
-    margin: 0 0 20px 0;
-    line-height: 1.15;
-  }
-
-  .discord-title .wink {
-    font-weight: 400;
-  }
-
-  .discord-description {
-    font-size: 16px;
-    line-height: 1.7;
-    color: rgba(255,255,255,0.92);
-    max-width: 480px;
-    margin-bottom: 32px;
-  }
-
-  .discord-btn {
-    display: inline-block;
-    background: #ffffff;
-    color: #a8c93f;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    padding: 16px 32px;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  }
-
-  .discord-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 22px rgba(0,0,0,0.2);
-  }
-
-  .discord-illustration {
-    flex: 1 1 320px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .illustration-img {
-    width: 100%;
-    max-width: 480px;
-    height: auto;
-    display: block;
-  }
-
-  @media (max-width: 768px) {
-    .discord-section {
-      padding: 60px 24px;
-      text-align: center;
-    }
-    .discord-container {
-      flex-direction: column-reverse;
-    }
-    .discord-description {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .discord-title {
-      font-size: 32px;
-    }
-  }
-</style>
 </body>
 </html>
