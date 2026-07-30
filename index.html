@@ -1,295 +1,238 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ademass — Somos Comunidad. Somos Developers.</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
- <div class="nav-inner">
-    <a href="#" class="logo">
-      <img src="/img/logo.png" class="logoa" alt="Ademass" style="height:42px;width:auto;">
-      Ademass
-    </a>
-    <nav class="nav-links">
-      <a href="#" class="active">Testimo</a>
-      <a href="#">Articulos</a>
-      <a href="#">Discord</a>
-      <a href="#" class="btn btn-teal">Staff</a>
-      <a href="#" class="btn btn-lime">Pilares</a>
-    </nav>
-  </div>
-</header>
-
-<!-- HERO FULL-WIDTH IMAGE (leave src empty, add your own) -->
-<div class="hero-banner">
-  <img src="img/herp.png" alt="Ademass hero" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-  <div class="img-placeholder" style="display:none;">imagen hero (coloca aquí tu URL)</div>
-</div>
-
-<!-- AWARDS -->
-<div class="awards-band">
-  <div class="awards-inner">
-    <div class="award">
-      <svg viewBox="0 0 24 24" fill="none">
-        <path d="M12 2l1.9 4.3 4.6.5-3.4 3.2.9 4.6L12 12.4 7.9 14.6l.9-4.6L5.4 6.8l4.6-.5L12 2z" fill="var(--gold)"/>
-        <path d="M6 14v6l3-1.5L9 20V14" stroke="var(--gold)" stroke-width="1.2" fill="none"/>
-        <path d="M18 14v6l-3-1.5L15 20V14" stroke="var(--gold)" stroke-width="1.2" fill="none"/>
-      </svg>
-      <span>Impact Start-Up Web Summit 2023</span>
-    </div>
-    <div class="award">
-      <svg viewBox="0 0 24 24" fill="none">
-        <path d="M12 2l1.9 4.3 4.6.5-3.4 3.2.9 4.6L12 12.4 7.9 14.6l.9-4.6L5.4 6.8l4.6-.5L12 2z" fill="var(--gold)"/>
-        <path d="M6 14v6l3-1.5L9 20V14" stroke="var(--gold)" stroke-width="1.2" fill="none"/>
-        <path d="M18 14v6l-3-1.5L15 20V14" stroke="var(--gold)" stroke-width="1.2" fill="none"/>
-      </svg>
-      <span>Alpha Start-Up Web Summit 2023</span>
-    </div>
-  </div>
-</div>
-
-<!-- CONTENT -->
-<div class="content-section">
-  <div class="content-left">
-    <div class="eyebrow">FORMACIÓN, PRÁCTICAS, EMPLEO Y CERTIFICACIONES DEVS.</div>
-    <h1 class="title">Somos Comunidad. Somos Developers. Esta es tu casa.</h1>
-    <p class="body-text">
-      Ademass es una comunidad de desarrolladores abierta que busca aunar en un único lugar todo lo que un desarrollador necesita: Formación de calidad para todos los niveles y especializaciones, oportunidades de empleo para mejorar en tu carrera, certificaciones de peso que acrediten tus conocimientos, resolución de dudas, posibilidad de participar en prácticas con proyectos reales y mucho más...
-    </p>
-    <div class="testimonial">
-      <div class="avatar-ph">
-        <img src="" alt="Juanjo Ruiz" style="width:100%;height:100%;border-radius:50%;object-fit:cover;" onerror="this.style.display='none';">
-      </div>
-      <div class="testimonial-text">
-        «No necesitas haber ido a la universidad, ni tener conocimientos previos. Si eres o quieres ser programador, Ademass es tu casa. Aquí encontrarás todo lo que necesitas. Elige la opción que mejor se adapte a ti. Somos una comunidad. Únete, juntos somos mejores.»
-        <span class="author">Juanjo Ruiz, CTO Ademass</span>
-      </div>
-    </div>
-    <div class="actions">
-      <a href="#" class="btn btn-outline">Accede al campus</a>
-      <a href="#" class="btn btn-lime">Regístrate ahora</a>
-    </div>
-  </div>
-
-  <div class="content-right">
-    <div class="char-img">
-      <img src="img/gato.png" alt="Ilustración developer" style="width:100%;height:100%;object-fit:contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-      <div class="img-placeholder" style="display:none; height:100%;">imagen personaje (coloca aquí tu URL)</div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Staff -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ademass — Somos Comunidad. Somos Developers.</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/lucide@latest"></script>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background-color: #ffffff;
-      color: #334155;
-      padding-bottom: 60px;
-    }
-
-   
-
-    .main-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-
-    /* Subtítulo superior */
-    .top-subtitle {
-      color: #94a3b8;
-      font-size: 0.95rem;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 25px;
-    }
-
-    /* Botón verde/lima */
-    .btn-top {
-      display: inline-block;
-      text-decoration: none;
-      color: #a3e635;
-      border: 2px solid #a3e635;
-      padding: 12px 28px;
-      border-radius: 50px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      transition: all 0.3s ease;
-      margin-bottom: 40px;
-    }
-
-    .btn-top:hover {
-      background-color: #a3e635;
-      color: #ffffff;
-    }
-
-    /* Título principal Staff */
-    .staff-title {
-      font-size: 2.5rem;
-      color: #38bdf8;
-      margin-bottom: 40px;
-      font-weight: 700;
-    }
-
-    /* Grid para las 5 tarjetas */
-    .staff-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    /* Ajustes para la tarjeta completa */
-.card {
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-  padding: 24px 16px; /* Ajustamos un poco el relleno */
-  width: 210px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; /* Alinea los textos e imágenes a la misma altura */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Ajuste perfecto para las imágenes */
-.avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 12px;
-  
-  /* Mantener proporción y que no se recorte el personaje */
-  object-fit: contain; 
-  
-  /* Color de fondo suave para que todas compartan el mismo fondo */
-  background-color: #f1f5f9; 
-  padding: 10px; /* Margen interno para que el personaje no toque las orillas */
-  margin-bottom: 16px;
-}
-
-    .member-name {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #1e293b;
-      margin-bottom: 6px;
-    }
-
-    .member-role {
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #64748b;
-      margin-bottom: 12px;
-      text-transform: uppercase;
-    }
-
-    .member-desc {
-      font-size: 0.85rem;
-      color: #64748b;
-      line-height: 1.5;
-      text-align: center;
-    }
-  </style>
 </head>
+
 <body>
 
-  <!-- Franja de color superior opcional -->
-  <div class="hero-banner"></div>
+  <header>
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <img src="/img/logo.png" class="logoa" alt="Ademass" style="height:42px;width:auto;">
+        Ademass
+      </a>
+      <nav class="nav-links">
+        <a href="/index.html">Inicio</a>
+        <a href="/Testimonios/testimonios.html" class="active">Testimo</a>
+        <a href="/Articulos/articulos.html">Articulos</a>
+        <a href="">Discord</a>
+        <a href="#" class="btn btn-teal">Staff</a>
+        <a href="/Pilares/Pilares.html" class="btn btn-lime">Pilares</a>
+      </nav>
+    </div>
+  </header>
 
-  <main class="main-container">
-    
-    <!-- Texto descriptivo arriba -->
-    <p class="top-subtitle">CONOCE A LOS ROCKSTARS DE ADEMASS, Y CONVIÉRTETE EN UNO DE ELLOS.</p>
+  <!-- HERO FULL-WIDTH IMAGE -->
+  <div class="hero-banner">
+    <img src="img/herp.png" alt="Ademass hero"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="img-placeholder" style="display:none;">imagen hero (coloca aquí tu URL)</div>
+  </div>
 
-    <!-- Enlace a otra pestaña -->
-    <a href="https://tu-sitio.com/contacto" target="_blank" rel="noopener noreferrer" class="btn-top">
-      VER MIEMBROS DE LA COMUNIDAD CON MAYOR REPUTACIÓN
-    </a>
+  <!-- AWARDS -->
+  <div class="awards-band">
+    <div class="awards-inner">
+      <div class="award">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 2l1.9 4.3 4.6.5-3.4 3.2.9 4.6L12 12.4 7.9 14.6l.9-4.6L5.4 6.8l4.6-.5L12 2z" fill="var(--gold)" />
+          <path d="M6 14v6l3-1.5L9 20V14" stroke="var(--gold)" stroke-width="1.2" fill="none" />
+          <path d="M18 14v6l-3-1.5L15 20V14" stroke="var(--gold)" stroke-width="1.2" fill="none" />
+        </svg>
+        <span>Impact Start-Up Web Summit 2023</span>
+      </div>
+      <div class="award">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 2l1.9 4.3 4.6.5-3.4 3.2.9 4.6L12 12.4 7.9 14.6l.9-4.6L5.4 6.8l4.6-.5L12 2z" fill="var(--gold)" />
+          <path d="M6 14v6l3-1.5L9 20V14" stroke="var(--gold)" stroke-width="1.2" fill="none" />
+          <path d="M18 14v6l-3-1.5L15 20V14" stroke="var(--gold)" stroke-width="1.2" fill="none" />
+        </svg>
+        <span>Alpha Start-Up Web Summit 2023</span>
+      </div>
+    </div>
+  </div>
 
-    <!-- Título de la sección -->
-    <h2 class="staff-title">Staff</h2>
-    
-    <!-- Integrantes (Backyardigans) -->
-    <div class="staff-grid">
-      
-      <!-- Pablo -->
-      <div class="card">
-        <img src="assets/img/Pablo.webp" alt="Pablo" class="avatar">
-        <h3 class="member-name">Pablo</h3>
-        <p class="member-role">CEO</p>
-        <p class="member-desc">Entusiasta y lleno de energía. Lidera las misiones e ideas creativas del equipo.</p>
-      <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
-  <i data-lucide="mail"></i>
-  <span>Contáctanos aquí</span>
-</a>
+  <!-- CONTENT -->
+  <div class="content-section">
+    <div class="content-left">
+      <div class="eyebrow">FORMACIÓN, PRÁCTICAS, EMPLEO Y CERTIFICACIONES DEVS.</div>
+      <h1 class="title">Somos Comunidad. Somos Developers. Esta es tu casa.</h1>
+      <p class="body-text">
+        Ademass es una comunidad de desarrolladores abierta que busca aunar en un único lugar todo lo que un
+        desarrollador necesita: Formación de calidad para todos los niveles y especializaciones, oportunidades de empleo
+        para mejorar en tu carrera, certificaciones de peso que acrediten tus conocimientos, resolución de dudas,
+        posibilidad de participar en prácticas con proyectos reales y mucho más...
+      </p>
+      <div class="testimonial">
+        <div class="avatar-ph">
+          <img src="" alt="Juanjo Ruiz" style="width:100%;height:100%;border-radius:50%;object-fit:cover;"
+            onerror="this.style.display='none';">
+        </div>
+        <div class="testimonial-text">
+          «No necesitas haber ido a la universidad, ni tener conocimientos previos. Si eres o quieres ser programador,
+          Ademass es tu casa. Aquí encontrarás todo lo que necesitas. Elige la opción que mejor se adapte a ti. Somos
+          una comunidad. Únete, juntos somos mejores.»
+          <span class="author">Juanjo Ruiz, CTO Ademass</span>
+        </div>
+      </div>
+      <div class="actions">
+        <a href="#" class="btn btn-outline">Accede al campus</a>
+        <a href="#" class="btn btn-lime">Regístrate ahora</a>
+      </div>
     </div>
 
-      <!-- Tyrone -->
-      <div class="card">
-        <img src="assets/img/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="Tyrone" class="avatar">
-        <h3 class="member-name">Tyrone</h3>
-        <p class="member-role">COO</p>
-        <p class="member-desc">Relajado y analítico. Aporta el equilibrio y la calma para ejecutar cada plan.</p>
-      <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
-  <i data-lucide="mail"></i>
-  <span>Contáctanos aquí</span>
-</a>
+    <div class="content-right">
+      <div class="char-img">
+        <img src="img/gato.png" alt="Ilustración developer" style="width:100%;height:100%;object-fit:contain;"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="img-placeholder" style="display:none; height:100%;">imagen personaje (coloca aquí tu URL)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content">
+
+    <!-- STAFF -->
+    <main class="main-container">
+
+      <p class="top-subtitle">CONOCE A LOS ROCKSTARS DE ADEMASS, Y CONVIÉRTETE EN UNO DE ELLOS.</p>
+
+      <a href="https://tu-sitio.com/contacto" target="_blank" rel="noopener noreferrer" class="btn-top">
+        VER MIEMBROS DE LA COMUNIDAD CON MAYOR REPUTACIÓN
+      </a>
+
+      <h2 class="staff-title">Staff</h2>
+
+      <div class="staff-grid">
+
+        <div class="card">
+          <img src="assets/img/Pablo.webp" alt="Pablo" class="avatar">
+          <h3 class="member-name">Pablo</h3>
+          <p class="member-role">CEO</p>
+          <p class="member-desc">Entusiasta y lleno de energía. Lidera las misiones e ideas creativas del equipo.</p>
+          <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+            <i data-lucide="mail"></i>
+            <span>Contáctanos aquí</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <img src="assets/img/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="Tyrone" class="avatar">
+          <h3 class="member-name">Tyrone</h3>
+          <p class="member-role">COO</p>
+          <p class="member-desc">Relajado y analítico. Aporta el equilibrio y la calma para ejecutar cada plan.</p>
+          <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+            <i data-lucide="mail"></i>
+            <span>Contáctanos aquí</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <img src="assets/img/Uniqua.webp" alt="Uniqua" class="avatar">
+          <h3 class="member-name">Uniqua</h3>
+          <p class="member-role">Project Manager</p>
+          <p class="member-desc">Intrépida y ágil. Asume retos con determinación y motiva al equipo.</p>
+          <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+            <i data-lucide="mail"></i>
+            <span>Contáctanos aquí</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <img src="assets/img/Tasha.jpg" alt="Tasha" class="avatar">
+          <h3 class="member-name">Tasha</h3>
+          <p class="member-role">CQO</p>
+          <p class="member-desc">Racional y directa. Asegura que los proyectos cumplan altos estándares de calidad.</p>
+          <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+            <i data-lucide="mail"></i>
+            <span>Contáctanos aquí</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <img src="assets/img/Austin.webp" alt="Austin" class="avatar">
+          <h3 class="member-name">Austin</h3>
+          <p class="member-role">Backend Engineer</p>
+          <p class="member-desc">Ingenioso y reservado. Resuelve problemas complejos desde el soporte técnico.</p>
+          <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
+            <i data-lucide="mail"></i>
+            <span>Contáctanos aquí</span>
+          </a>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-col footer-brand">
+        <div class="logo-mark">
+          <svg width="46" height="40" viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="15,2 28,36 2,36" fill="none" stroke="#2bd4c8" stroke-width="4" stroke-linejoin="round" />
+            <text x="24" y="32" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#c3d024">D</text>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-name">Ademass</span>
+            <span class="logo-tagline">Training Development</span>
+          </div>
+        </div>
+
+        <p class="address-line">Ademass Training Development</p>
+        <p class="address-line">Polo Digital</p>
+        <p class="address-line">29003 Málaga, ESPAÑA</p>
+        <p class="email-line">info@ademass.com</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Legal</h4>
+        <a class="footer-link" href="#">Aviso Legal</a>
+        <a class="footer-link" href="#">Términos y Condiciones</a>
+        <a class="footer-link" href="#">Política de Privacidad</a>
+        <a class="footer-link" href="#">Política de Cookies</a>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Enlaces</h4>
+        <a class="footer-link" href="#">Campus</a>
+        <a class="footer-link" href="#">Empresas</a>
+        <a class="footer-link" href="#">Comunidad</a>
+        <a class="footer-link" href="#">Staff</a>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Redes Sociales</h4>
+        <div class="social-grid">
+          <a class="social-icon fb" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="social-icon tw" href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a class="social-icon ig" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a class="social-icon tg" href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a class="social-icon tk" href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a class="social-icon yt" href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a class="social-icon li" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a class="social-icon rss" href="#" aria-label="RSS"><i class="fa-solid fa-rss"></i></a>
+          <a class="social-icon gg" href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+        </div>
+
+        <a class="discord-btn" href="#">
+          <i class="fa-brands fa-discord"></i> Discord
+        </a>
+      </div>
+
     </div>
 
-      <!-- Uniqua -->
-      <div class="card">
-        <img src="assets/img/Uniqua.webp" alt="Uniqua" class="avatar">
-        <h3 class="member-name">Uniqua</h3>
-        <p class="member-role">Project Manager</p>
-        <p class="member-desc">Intrépida y ágil. Asume retos con determinación y motiva al equipo.</p>
-      <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
-  <i data-lucide="mail"></i>
-  <span>Contáctanos aquí</span>
-</a>
+    <div class="footer-bottom">
+      Ademass © Todos los derechos reservados. Versión: 0.8.0
     </div>
+  </footer>
 
-      <!-- Tasha -->
-      <div class="card">
-        <img src="assets/img/Tasha.jpg" alt="Tasha" class="avatar">
-        <h3 class="member-name">Tasha</h3>
-        <p class="member-role">CQO</p>
-        <p class="member-desc">Racional y directa. Asegura que los proyectos cumplan altos estándares de calidad.</p>
-      <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
-  <i data-lucide="mail"></i>
-  <span>Contáctanos aquí</span>
-</a>
-    </div>
-
-      <!-- Austin -->
-      <div class="card">
-        <img src="assets/img/Austin.webp" alt="Austin" class="avatar">
-        <h3 class="member-name">Austin</h3>
-        <p class="member-role">Backend Engineer</p>
-        <p class="member-desc">Ingenioso y reservado. Resuelve problemas complejos desde el soporte técnico.</p>
-      <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn-contacto">
-  <i data-lucide="mail"></i>
-  <span>Contáctanos aquí</span>
-</a>
-    </div>
-
-    </div>
 </body>
+
 </html>
