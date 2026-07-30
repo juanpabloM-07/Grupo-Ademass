@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --teal: #2ec6d6;
+  --teal-dark: #1a9db0;
+  --lime: #b9d43a;
+  --lime-dark: #9cba1f;
+  --ink: #1f2430;
+  --ink-soft: #5a6270;
+  --paper: #ffffff;
+  --line: #e7edec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+}
+
+.logoa {
+  height: 60px;
+  width: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.nav-links a.active {
+  color: var(--teal-dark);
+}
+
+.nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 13px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-teal {
+  background: var(--teal);
+  color: #fff;
+}
+
+.btn-lime {
+  background: var(--lime);
+  color: var(--ink);
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: var(--teal);
+  color: var(--teal-dark);
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+/* ---------- FOOTER ---------- */
+
+.page-content {
+  flex: 1 0 auto;
+}
+
+.site-footer {
+  flex-shrink: 0;
+  background-color: #1b1b1b;
+  padding: 55px 40px 25px;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.footer-brand {
+  min-width: 220px;
+}
+
+.logo-mark {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-name {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.logo-tagline {
+  color: #c3d024;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.address-line {
+  color: #b7bcc4;
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+
+.email-line {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px 0 0;
+}
+
+.footer-heading {
+  color: #34c6d6;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+
+.footer-link {
+  color: #d6d9dd;
+  font-size: 14.5px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 34px);
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.social-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.social-icon.fb {
+  background-color: #3b5998;
+}
+
+.social-icon.tw {
+  background-color: #1da1f2;
+}
+
+.social-icon.ig {
+  background-color: #d6249f;
+}
+
+.social-icon.tg {
+  background-color: #29a9e0;
+}
+
+.social-icon.tk {
+  background-color: #f5004a;
+}
+
+.social-icon.yt {
+  background-color: #f5350a;
+}
+
+.social-icon.li {
+  background-color: #0077b5;
+}
+
+.social-icon.rss {
+  background-color: #f26522;
+}
+
+.social-icon.gg {
+  background-color: #4285f4;
+}
+
+.discord-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #7b2ff7;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.discord-btn i {
+  font-size: 18px;
+}
+
+.discord-btn:hover {
+  background-color: #6a1fe0;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #8b8f96;
+  font-size: 13px;
+  margin-top: 45px;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+  }
+}
