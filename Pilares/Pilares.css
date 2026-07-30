@@ -6,6 +6,55 @@
   padding: 0;
 }
 
+:root{
+    --teal:#2ec6d6;
+    --teal-dark:#1a9db0;
+    --lime:#b9d43a;
+    --lime-dark:#9cba1f;
+    --ink:#1f2430;
+    --ink-soft:#5a6270;
+    --paper:#ffffff;
+    --line:#e7edec;
+    --dark:#2b2b2f;
+    --gold:#f0a93a;
+  }
+
+  /* ---------- NAV ---------- */
+header{
+    border-bottom:1px solid var(--line);
+    background:#fff;
+  }
+  .nav-inner{
+    max-width:1200px;margin:0 auto;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 32px;
+  }
+  .logoa{
+    height:60px;
+    width:auto;
+  }
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+    font-size:38px;
+  }
+  .nav-links{display:flex;align-items:center;gap:32px;font-weight:600;font-size:14px;color:var(--ink-soft);}
+  .nav-links a.active{color:var(--teal-dark);}
+  .nav-cta{display:flex;align-items:center;gap:12px;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    padding:9px 20px;border-radius:999px;font-weight:700;font-size:13px;
+    border:2px solid transparent;cursor:pointer;white-space:nowrap;
+  }
+  .btn-teal{background:var(--teal);color:#fff;}
+  .btn-lime{background:var(--lime);color:var(--ink);}
+  .btn-outline{background:transparent;border-color:var(--teal);color:var(--teal-dark);}
+
+  @media(max-width:900px){ .nav-links{display:none;} }
+
+
 body {
   font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
   background-color: #eef1f5;
